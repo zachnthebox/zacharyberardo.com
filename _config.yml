@@ -24,7 +24,7 @@ twitter_url: https://twitter.com/zachnthebox
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 gems:
   - jekyll-feed
 exclude:
