@@ -11,10 +11,5 @@
 					<a href="{{ page.url | absolute_url }}">{{ page.title }}</a>
 	    	{% endif %}
 			{% endfor %}
-			{% for page in site.pages %}
-				{% if page.layout == "home" %}
-					<a href="{{ "" | absolute_url }}/">{{ page.title }}</a>
-				{% endif %}
-			{% endfor %}
 		</nav>
 	</header>
