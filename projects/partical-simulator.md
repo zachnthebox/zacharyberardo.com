@@ -1,6 +1,6 @@
 ---
 title: Threaded Partical Simulator
-layout: post
+layout: page
 description:
 image: assets/images/partical-sim-placeholder.jpg
 video: assets/video/particles.mp4
