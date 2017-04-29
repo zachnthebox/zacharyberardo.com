@@ -73,6 +73,10 @@ table {
 }
 
 .page {
+  img {
+    width: 100%;
+    max-width: 48em;
+  }
   &>.image.main {
     margin: 0 0 0.5em 0;
   }
