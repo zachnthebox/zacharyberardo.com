@@ -67,3 +67,7 @@ header nav {
     font-size: 1em !important;
   }
 }
+
+table {
+  @extend table.alt;
+}
