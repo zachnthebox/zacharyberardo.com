@@ -51,3 +51,19 @@
     opacity: 1;
   }
 }
+
+header nav {
+  font-size: 0.8em !important;
+}
+
+@media (min-width: 425px) {
+  header nav {
+    font-size: 0.9em !important;
+  }
+}
+
+@media (min-width: 490px) {
+  header nav {
+    font-size: 1em !important;
+  }
+}
