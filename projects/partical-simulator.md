@@ -3,10 +3,10 @@ title: Threaded Partical Simulator
 layout: post
 description:
 image: assets/images/partical-sim-placeholder.jpg
+video: assets/video/particles.mp4
 shortDescription: This particle simulator simulates gradational force each particle has on another. The results will be a stellar surprise.
 project: true
 ---
-
 
 This particle simulator simulates gradational force each particle has on another.
 The results will be a stellar surprise. There are 3 different versions of this program.
@@ -104,3 +104,8 @@ This version has the following usage:
 The _makfile_ is setup to work with the simulation as well. First you must change the variables, as above. The script also uses the _dt_ file in **dt.tx**, so make sure you make that file with the dt adjustments. Once finished type:
 
 `make simulation-special`
+
+<video width="100%" height="100%" controls poster="{{ site.url }}/assets/images/partical-sim-placeholder-2.jpg">
+  <source src="{{ site.url }}/assets/video/particles2.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
