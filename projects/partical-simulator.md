@@ -71,11 +71,11 @@ _Creates a certain number of particles and prints in **particle.01.data**_
 
 **Each test used 300 timesteps.**
 
-![timingPlot]({{ site.url }}/assets/images/partical-sim-timing.png)
+[![timingPlot]({{ site.url }}/assets/images/partical-sim-timing.png)]({{ site.url }}/assets/images/partical-sim-timing.png)
 
 These tests used 48 processors on chi in the Newton Cluster. There was not a upward slope in time with even up to 512 threads with 48 processors. Since the processing amount per thread decreases as more threads are added, ideally there would be a increase in time, but this seems not to be the case. The fastest average time was about 71.9 seconds processing 10,000 particles.
 
-![timingmpiPlot]({{ site.url }}/assets/images/partical-sim-timing-mpi.png)
+[![timingmpiPlot]({{ site.url }}/assets/images/partical-sim-timing-mpi.png)]({{ site.url }}/assets/images/partical-sim-timing-mpi.png)
 
 These test takes advantage of Open MPI for the processing. In these results, up to 16 processes were ran with each having 16 threads. In comparison with OpenMP, processing time was increased in all respects. There was a huge performance increase with 2 and 4 processes which was about 34.6 seconds. These tests do show a upward sloping graph as more processes are added due to the Open MPI overhead with each process getting a smaller particle amount.
 
