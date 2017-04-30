@@ -12,24 +12,38 @@
 
     {% include header.html %}
 
+    {% if page.image and page.video == nil %}
+      <section id="banner" class="style2">
+        <div class="inner">
+          <span class="image">
+            <img src="{{ site.baseurl }}/{{ page.image }}" alt="">
+          </span>
+          <header class="major">
+            <h1>{{ page.title }}</h1>
+          </header>
+          <div class="content">
+            {{ page.description }}
+          </div>
+        </div>
+      </section>
+    {% endif %}
+
     <div id="main" class="alt page">
       {% if page.video and page.image %}
-      <span class="image main">
-        <video width="100%" height="100%" controls poster="{{ site.baseurl }}/{{ page.image }}">
-          <source src="{{ site.baseurl }}/{{ page.video }}" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </span>
-      {% elsif page.image %}
         <span class="image main">
-          <img src="{{ site.baseurl }}/{{ page.image }}" alt="" />
+          <video width="100%" height="100%" controls poster="{{ site.baseurl }}/{{ page.image }}">
+            <source src="{{ site.baseurl }}/{{ page.video }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </span>
       {% endif %}
       <section id="one">
       	<div class="inner">
-      		<header class="major">
-      			<h1>{{ page.title }}</h1>
-      		</header>
+          {% if page.image and page.video %}
+        		<header class="major">
+        			<h1>{{ page.title }}</h1>
+        		</header>
+          {% endif %}
       		<p>{{ content }}</p>
       	</div>
       </section>
